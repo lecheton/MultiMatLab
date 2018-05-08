@@ -13,5 +13,8 @@ t = 0 : 1/Fs : duration;
 d = 0 : delay : duration; 
 Heartbeat = Amp*pulstran(t,d,'tripuls',pulse_width);
 plot(t,Heartbeat);
+title('QRS Wave');
+xlabel('Time (s)');
+ylabel('Voltage (mV)');
 end
 
